@@ -14,9 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Publish to Registry
-      uses: Yaob1990/docker-static-file@master
-      with:
-        name: yaoyao/blog
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        registry: ccr.ccs.tencentyun.com
+        uses: Yaob1990/docker-static-file@master
+        with:
+          name: yaoyao/blog
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          registry: ccr.ccs.tencentyun.com
